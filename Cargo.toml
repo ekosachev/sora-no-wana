@@ -3,8 +3,8 @@ name = "sora_no_wana"
 description = "Weave the Stars, Trap the Universe"
 authors = ["Kosachev Egor <e.kosachev-s@mail.ru>"]
 license = "GPL-3.0-only"
-license-file = "./LICENSE"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+eframe = "0.31.0"
