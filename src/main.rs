@@ -1,16 +1,11 @@
-use app::GameApp;
-use eframe::{egui, NativeOptions};
+use crate::game::run_game;
+use bevy::app::App;
 
-mod app;
+mod game;
 mod ui;
 
-fn main() -> eframe::Result {
-    let options = NativeOptions::default();
+fn main() {
+    let app = App::new();
 
-    eframe::run_native(
-        "Sora no Wana",
-        options,
-        Box::new(|_cc| Ok(Box::new(GameApp::default()))),
-    )
+    run_game(app);
 }
-
